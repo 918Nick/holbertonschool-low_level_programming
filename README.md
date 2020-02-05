@@ -1,1 +1,2 @@
-# holbertonschool-low_level_programming
+#CISFUN
+learning to run bash with C
