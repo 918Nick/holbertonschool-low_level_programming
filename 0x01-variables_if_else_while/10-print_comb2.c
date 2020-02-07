@@ -7,23 +7,20 @@
 int main(void)
 {
   int i;
-  int j;
-  for (i = '0'; i <= '9'; i++)
+
+  i = 0;
+
+  while (i < 100)
     {
-      for (j = '0'; j <= '9'; j++)
+      putchar(i / 10 % 10 + '0');
+      putchar(i % 10 + '0');
+      if (i < 99)
 	{
-	  putchar(i);
-	  putchar(j);
-	  if (j == '9' && i == '9')
-	    {
-	      putchar('\n');
-	    }
-	  else
-	    {
-	      putchar(',');
-	      putchar(' ');
-	    }
+	  putchar(',');
+	  putchar(' ');
 	}
+      i++;
     }
+  putchar('\n');
   return (0);
 }
